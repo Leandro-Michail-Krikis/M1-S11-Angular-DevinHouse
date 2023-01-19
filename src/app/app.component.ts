@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'M1-S11-Angular-DevinHouse';
+
+  page:string = "1";
+
+  mudaDePagina(id : string) {
+    this.page = id;
+  }
 }
