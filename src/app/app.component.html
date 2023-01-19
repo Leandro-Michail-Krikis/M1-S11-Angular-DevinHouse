@@ -30,7 +30,50 @@
 
 
 <!-- Ex3 -->
-<div *ngFor="let foto of arrayFotos">
+<!-- <div *ngFor="let foto of arrayFotos">
   <img src="{{foto.url}}" alt="">
   <p>{{foto.description}}</p>
+</div> -->
+
+
+<!-- Ex4 -->
+<!-- <div class="card">
+  <a (click)="showModal = !showModal">Open Demo Modal</a>
 </div>
+
+<div *ngIf="showModal" class="modal">
+  <div class="modal__content">
+    <h1>Example modal</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima
+      libero veniam, modi corrupti doloremque repellendus vitae mollitia. Ipsum
+      voluptatibus ea ab quos molestiae at expedita maiores dolore a corrupti!
+    </p>
+    <a (click)="showModal = !showModal" class="modal__close">&times;</a>
+  </div>
+</div>
+
+Ex5
+<app-teste-ng-content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae inventore repudiandae dolorem recusandae earum dolorum aperiam iusto, laudantium deserunt enim voluptas! Velit quam harum, nemo tenetur earum officiis dignissimos.</app-teste-ng-content> -->
+
+<!-- Ex6 -->
+<!-- <app-teste-ng-content>
+  <h5 titulo class="card-title">Card title</h5>
+  <h6 subtitulo class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+  <p descricao class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</app-teste-ng-content> -->
+
+
+<!-- Ex7 -->
+<h1>So letras e numeros</h1>
+<input #inputImportante
+[ngStyle]="{'color': erro ? 'red' : 'green'}"
+(keyup)="inputAconteceu(inputImportante.value)"
+type="text">
+
+<ng-template [ngIf]="erro" [ngIfElse]="tudoOk">
+  <h1>So numeros e letras</h1>
+</ng-template>
+<ng-template #tudoOk>
+  <p>Tudo ok</p>
+</ng-template>

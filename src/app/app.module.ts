@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CaptalizePhillipsPipe } from './pipes/captalize-phillips.pipe';
+import { TesteNgContentComponent } from './teste-ng-content/teste-ng-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CaptalizePhillipsPipe
+    CaptalizePhillipsPipe,
+    TesteNgContentComponent
   ],
   imports: [
     BrowserModule,
