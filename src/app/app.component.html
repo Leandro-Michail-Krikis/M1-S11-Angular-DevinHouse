@@ -1,5 +1,9 @@
+<!-- Ex1 -->
 <!-- <p> {{"patati" | captalizePhillips}}</p> -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+<!-- Ex2 -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -22,4 +26,11 @@
   <h2 *ngSwitchCase="1" >Estou na página de Home</h2>
   <h2 *ngSwitchCase="2" >Estou na página de Preços</h2>
   <h2 *ngSwitchCase="3" >Estou na página de Informações</h2>
+</div> -->
+
+
+<!-- Ex3 -->
+<div *ngFor="let foto of arrayFotos">
+  <img src="{{foto.url}}" alt="">
+  <p>{{foto.description}}</p>
 </div>
